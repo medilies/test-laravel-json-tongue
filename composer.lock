@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ccbd816a07b206f971042295b899d1ba",
+    "content-hash": "a7d7e3a3e2f682184c843c1f618737eb",
     "packages": [
         {
             "name": "brick/math",
@@ -432,6 +432,139 @@
                 }
             ],
             "time": "2022-06-18T20:57:19+00:00"
+        },
+        {
+            "name": "elaborate-code/laravel-json-tongue",
+            "version": "v0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/elaborate-code/laravel-json-tongue.git",
+                "reference": "f7c023d335af99b0914a9b13260aae2e053255b3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/elaborate-code/laravel-json-tongue/zipball/f7c023d335af99b0914a9b13260aae2e053255b3",
+                "reference": "f7c023d335af99b0914a9b13260aae2e053255b3",
+                "shasum": ""
+            },
+            "require": {
+                "elaborate-code/php-json-tongue": "^1.2",
+                "illuminate/contracts": "^9.0",
+                "php": "^8.0",
+                "spatie/laravel-package-tools": "^1.13.0"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^6.0",
+                "nunomaduro/larastan": "^2.0.1",
+                "orchestra/testbench": "^7.0",
+                "pestphp/pest": "^1.21",
+                "pestphp/pest-plugin-laravel": "^1.1",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "ElaborateCode\\LaravelJsonTongue\\LaravelJsonTongueServiceProvider"
+                    ],
+                    "aliases": {
+                        "LaravelJsonTongue": "ElaborateCode\\LaravelJsonTongue\\Facades\\LaravelJsonTongue"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "ElaborateCode\\LaravelJsonTongue\\": "src",
+                    "ElaborateCode\\LaravelJsonTongue\\Database\\Factories\\": "database/factories"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "medilies",
+                    "email": "medilies.contact@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Use multiple JSON files per locale on Laravel",
+            "homepage": "https://github.com/elaborate-code/laravel-json-tongue",
+            "keywords": [
+                "elaborate-code",
+                "laravel",
+                "laravel-json-tongue",
+                "localization"
+            ],
+            "support": {
+                "issues": "https://github.com/elaborate-code/laravel-json-tongue/issues",
+                "source": "https://github.com/elaborate-code/laravel-json-tongue/tree/v0.2.1"
+            },
+            "time": "2022-10-08T18:04:49+00:00"
+        },
+        {
+            "name": "elaborate-code/php-json-tongue",
+            "version": "v1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/elaborate-code/php-json-tongue.git",
+                "reference": "9adcf445e8f94d5e7eb68e419efca050e4e79539"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/elaborate-code/php-json-tongue/zipball/9adcf445e8f94d5e7eb68e419efca050e4e79539",
+                "reference": "9adcf445e8f94d5e7eb68e419efca050e4e79539",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.2",
+                "pestphp/pest": "^1.22",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/Helpers/helpers.php"
+                ],
+                "psr-4": {
+                    "ElaborateCode\\JsonTongue\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mohamed Ilies BOUDOUMA",
+                    "email": "medilies.contact@gmail.com"
+                }
+            ],
+            "description": "A Facade for loading localization data from JSONs within a lang folder",
+            "homepage": "https://github.com/elaborate-code/php-json-tongue",
+            "keywords": [
+                "internationalization",
+                "json",
+                "languages",
+                "locale",
+                "localization",
+                "translation"
+            ],
+            "support": {
+                "issues": "https://github.com/elaborate-code/php-json-tongue/issues",
+                "source": "https://github.com/elaborate-code/php-json-tongue/tree/v1.2.1"
+            },
+            "time": "2022-10-08T10:57:24+00:00"
         },
         {
             "name": "fruitcake/php-cors",
@@ -2835,6 +2968,65 @@
                 }
             ],
             "time": "2022-09-16T03:22:46+00:00"
+        },
+        {
+            "name": "spatie/laravel-package-tools",
+            "version": "1.13.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-package-tools.git",
+                "reference": "163ee3bc6c0a987535d8a99722a7dbcc5471a140"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/163ee3bc6c0a987535d8a99722a7dbcc5471a140",
+                "reference": "163ee3bc6c0a987535d8a99722a7dbcc5471a140",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^9.28",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.5",
+                "orchestra/testbench": "^7.7",
+                "phpunit/phpunit": "^9.5.24",
+                "spatie/test-time": "^1.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\LaravelPackageTools\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Tools for creating Laravel packages",
+            "homepage": "https://github.com/spatie/laravel-package-tools",
+            "keywords": [
+                "laravel-package-tools",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/laravel-package-tools/issues",
+                "source": "https://github.com/spatie/laravel-package-tools/tree/1.13.5"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-09-07T14:31:31+00:00"
         },
         {
             "name": "symfony/console",
